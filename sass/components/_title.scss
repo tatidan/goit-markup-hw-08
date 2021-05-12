@@ -1,0 +1,41 @@
+.section-title {
+  @include font(36px, 700, 1.2, 0.03em);
+  margin-bottom: 50px;
+  text-align: center;
+}
+.hero-title {
+  @include font(44px, 900, 1.4, 0.06em);
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.features-thumb-title {
+  display: inline-block;
+  @include font(14px, 700, 1.2, 0.03em);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.about-thumb-title {
+  display: inline-block;
+  @include font(14px, 700, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.team-member-title {
+  @include font(16px, 500, 1.2, 0.03em);
+  margin-bottom: 10px;
+}
+.join-block-title,
+.subscribe-title {
+  display: inline-block;
+  @include font(14px, 700, 1.1, 0.03em);
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+.project-title {
+  @include font(18px, 700, 2, 0.06em);
+  color: var(--primary-text-color);
+}

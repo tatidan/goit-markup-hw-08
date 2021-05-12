@@ -1,0 +1,63 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+/* ==== ADDRESS-LINKS-BLOCK========= */
+
+.footer-contacts {
+  flex-basis: calc((50% - 45px) / 2);
+  margin-right: 30px;
+
+    &__list-item {
+      display: block;
+    
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }    
+    }
+    &__link {
+      display: inline-block;
+      width: 100%;
+      font-style: normal;
+      color: var(--secondary-text-color);
+      @include font(14px, 500, 1.1, 0.02em);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
+    }  
+}
+.footer-address {
+  display: inline-block;
+  width: 100%;
+  color: var(--white-color);
+  font-style: var(--primary-font-style);
+  @include font(14px, 400, 1.7, 0.03em);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/* =========JOIN-BLOCK=========== */
+.join-block {
+  flex-basis: calc((50% - 45px) / 2);
+  margin-right: 30px;
+}
+
+/* ============SUBSCRIBE============= */
+.subscribe {
+  flex-basis: calc(50% - 15px);
+}

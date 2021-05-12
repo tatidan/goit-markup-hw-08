@@ -1,0 +1,25 @@
+.logo-header,
+.logo-accent,
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  @include font(26px, 700, 1.2, 0.03em);
+}
+.logo-header {
+  color: var(--primary-text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+
+  &:focus {
+    outline: 2px solid var(--accent-color);
+  }
+}
+
+.logo-footer {
+  display: inline-block;
+  color: var(--white-color);
+  margin-bottom: 33px;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
