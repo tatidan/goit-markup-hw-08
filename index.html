@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
   <title>WebStudio</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -33,8 +33,42 @@
           </li>
         </ul>
       </nav>
+
+      <!--=============MOBILE-MENU=================-->      
+      <button class="header__mobile-menu-btn" type="button" data-menu-button>
+        <svg class="header__mobile-menu-icon" width="40" height="40">
+          <use href="./img/icons.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu" data-menu is-open>
+        <button class="mobile-menu__close-button">
+        <svg class="mobile-menu__icon-close" width="19" height="19" data-menu-close>
+          <use href="./img/icons.svg#icon-close_24px"></use>          
+        </svg>
+        </button>
+
+        <ul class="mobile-menu__nav-list list">
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link link" href="">Студия</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link link" href="">Портфолио</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link link" href="">Контакты</a></li>
+        </ul>
+
+        <ul class="mobile-menu__contacts-list list">
+          <li class="mobile-menu__tel">+38 096 111 11 11</li>
+          <li class="mobile-menu__mail">info@devstudio.com</li>
+        </ul>
+
+        <ul class="mobile-menu__social-links-list list">
+          <li class="mobile-menu__social-list-item"><a href="mobile-menu__social-link link">Instagram</a></li>
+          <li class="mobile-menu__social-list-item"><a href="mobile-menu__social-link link">Twitter</a></li>
+          <li class="mobile-menu__social-list-item"><a href="mobile-menu__social-link link">Facebook</a></li>
+          <li class="mobile-menu__social-list-item"><a href="mobile-menu__social-link link">Linkedin</a></li>
+        </ul>
+      </div>
+
       <!--=============HEADER-CONTACTS-NAV=================-->
-      <div class="contacts-nav">
+      <!-- <div class="contacts-nav">
         <ul class="contacts-nav__list list">
           <li class="contacts-nav__list-item" lang="en">
             <a class="contacts-nav__link link" href="mailto:info@devstudio.com">info@devstudio.com
@@ -53,11 +87,11 @@
         </ul>
       </div>
     </div>
-  </header>
+  </header> -->
 
   <main>
     <!--=============HERO==============-->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container">
         <h1 class="hero-title">
           эффективные решения <br />
@@ -65,17 +99,17 @@
         </h1>
         <button data-modal-open class="order-button button" type="button">
           Заказать услугу
-        </button>
+        </button> -->
 
         <!-- =========BACKDROP & MODAL========== -->
-        <div data-modal class="backdrop is-hidden">
+        <!-- <div data-modal class="backdrop is-hidden">
           <div class="modal">
             <p class="modal-form__slogan">
               Оставьте свои данные, мы вам перезвоним
-            </p>
+            </p> -->
 
             <!-- =======MODAL FORM========= -->
-            <form action="#" class="modal-form">
+            <!-- <form action="#" class="modal-form">
               <label for="name" class="label-name name-top">Имя</label>
               <div class="input-textarea-wrapper">
                 <input type="text" name="name" id="name" required autofocus minlength="3" class="input-textarea" />
@@ -125,10 +159,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!--============FEATURES===============-->
-    <section class="features section">
+    <!-- <section class="features section">
       <div class="container">
         <h2 class="section-title visually-hidden">Особенности</h2>
         <ul class="features__list list">
@@ -190,10 +224,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!--===============ABOUT===============-->
-    <section class="about section">
+    <!-- <section class="about section">
       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="about__list list">
@@ -217,10 +251,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!--===============OUR TEAM===============-->
-    <section class="team section">
+    <!-- <section class="team section">
       <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team__list list">
@@ -358,10 +392,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!--===============OUR CLIENTS===============-->
-    <section class="clients section">
+    <!-- <section class="clients section">
       <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
         <ul class="clients__list list">
@@ -404,11 +438,11 @@
         </ul>
       </div>
     </section>
-  </main>
+  </main> -->
 
   <!-- ==========FOOTER============== -->
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer-contacts">
         <a class="logo-footer link" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
@@ -427,9 +461,9 @@
             </li>
           </ul>
         </address>
-      </div>
+      </div> -->
       <!-- =========JOIN-BLOCK=========== -->
-      <div class="join-block">
+      <!-- <div class="join-block">
         <b class="join-block-title">присоединяйтесь</b>
         <ul class="social-links list">
           <li class="social-links__list-item">
@@ -457,10 +491,10 @@
               </svg></a>
           </li>
         </ul>
-      </div>
+      </div> -->
 
       <!-- =========SUBSCRIBE=========== -->
-      <div class="subscribe">
+      <!-- <div class="subscribe">
         <b class="subscribe-title">подпишитесь на рассылку</b>
 
         <form action="#" class="subscribe-form">
@@ -477,9 +511,10 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
-  <script src="./js/modal.js"></script>
+  <!-- <script src="./js/modal.js"></script> -->
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -3,12 +3,12 @@
 .logo-footer {
   font-family: "Raleway", sans-serif;
   @include font(26px, 700, 1.2, 0.03em);
+  display: inline-block;
+  align-self: center;
 }
+
 .logo-header {
   color: var(--primary-text-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
 
   &:focus {
     outline: 2px solid var(--accent-color);
@@ -23,3 +23,10 @@
 .logo-accent {
   color: var(--accent-color);
 }
+
+// desktop styles
+// .logo-header {
+//   color: var(--primary-text-color);
+//   padding-top: 24px;
+//   padding-bottom: 24px;
+//   margin-right: 93px;
