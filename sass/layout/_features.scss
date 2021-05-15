@@ -1,18 +1,22 @@
 .features {
   background-color: var(--white-color);
-  padding-bottom: 0;
-  margin: 0;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-bottom: 0;
+      margin: 0;
+    }
+  }
 
   &__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     margin-top: -30px;
     margin-left: -30px;
   }
   &__list-item {
-    flex-basis: calc((100% - 4 * 30px) / 4);
+    flex-basis: 100%;
     margin-top: 30px;
     margin-left: 30px;
   }
@@ -28,5 +32,17 @@
     border-radius: 4px;
     background-color: var(--secondary-bg-color);
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__list-item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__list-item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }

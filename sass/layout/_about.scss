@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
+
 .about {
   background-color: var(--white-color);
   &__list {
