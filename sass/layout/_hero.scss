@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px), (max-width: 767px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -17,7 +17,8 @@
       url("../img/hero/hero-mobile.jpg");
 
     & .container {
-      padding: 118px 60px;
+      padding-top: 118px;
+      padding-bottom: 118px;
     }
   }
 }
@@ -39,7 +40,8 @@
       url("../img/hero/hero-tablet.jpg");
 
     & .container {
-      padding: 118px 204px;
+      padding-top: 118px;
+      padding-bottom: 118px;
     }
   }
 }
@@ -65,7 +67,8 @@
     max-width: 1600px;
 
     & .container {
-      padding: 200px 452px;
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
   }
 }
@@ -79,17 +82,27 @@
 }
 
 .hero-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   @include font(26px, 900, 1.6, 0.06em);
   color: var(--white-color);
   text-transform: uppercase;
   margin-bottom: 30px;
   text-align: center;
 
+  @media screen and (max-width: 1199px) {
+    & {
+      max-width: 360px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     & {
       @include font(44px, 900, 1.4, 0.06em);
+      max-width: 700px;
     }
   }
 }
 
-// добавить width для текста, чтобы правильно перенос был
+// поставить кнопку order-button по центру
