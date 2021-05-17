@@ -2,31 +2,38 @@
 .logo-accent,
 .logo-footer {
   font-family: "Raleway", sans-serif;
-  @include font(26px, 700, 1.2, 0.03em);
+  @include font(24px, 700, 1.67, 0.03em);
   display: inline-block;
-  align-self: center;
+  @media screen and (min-width: 1200px) {
+    & {
+      @include font(26px, 700, 1.2, 0.03em);
+    }
+  }
 }
 
 .logo-header {
   color: var(--primary-text-color);
+  @media screen and (min-width: 768px) {
+    & {
+      margin-right: 88px;
+    }
+  }
 
   &:focus {
     outline: 2px solid var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-right: 93px;
+    }
+  }
 }
 
 .logo-footer {
-  display: inline-block;
   color: var(--white-color);
   margin-bottom: 33px;
 }
 .logo-accent {
   color: var(--accent-color);
 }
-
-// desktop styles
-// .logo-header {
-//   color: var(--primary-text-color);
-//   padding-top: 24px;
-//   padding-bottom: 24px;
-//   margin-right: 93px;

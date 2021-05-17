@@ -6,8 +6,11 @@
   opacity: 1;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 450px;
-  height: 609px;
+  width: 95vw;
+  max-width: 450px;
+  height: 95vh;
+  max-height: 609px;
+  overflow-y: scroll;
   padding: 40px;
   background-color: var(--white-color);
   cursor: pointer;
@@ -20,8 +23,8 @@
 
   @media screen and (min-width: 1200px) {
     & {
-      width: 528px;
-      height: 581px;
+      max-width: 528px;
+      max-height: 581px;
     }
   }
 
