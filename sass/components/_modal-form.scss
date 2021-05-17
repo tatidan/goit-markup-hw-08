@@ -10,7 +10,7 @@
     text-align: center;
     margin-bottom: 12px;
 
-    @media screen and (min-width) {
+    @media screen and (min-width: 1200px) {
       & {
         @include font(20px, 700, 1.15, 0.03em);
       }

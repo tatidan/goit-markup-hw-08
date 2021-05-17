@@ -294,14 +294,6 @@ body {
   margin-bottom: 10px;
 }
 
-.project-title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--primary-text-color);
-}
-
 .features-description {
   color: var(--secondary-text-color);
   font-size: 14px;
@@ -317,15 +309,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 16px;
-}
-
-.project-description {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  margin-bottom: 4px;
 }
 
 .social-links {
@@ -539,7 +522,7 @@ body {
   margin-bottom: 12px;
 }
 
-@media screen and (min-width) {
+@media screen and (min-width: 1200px) {
   .modal-form__slogan {
     font-size: 20px;
     font-weight: 700;
@@ -917,13 +900,15 @@ body {
   }
   .contacts-nav__list-item {
     display: flex;
-    flex-direction: row-reverse;
   }
   .contacts-nav__list-item:not(:last-child) {
     margin-bottom: 10px;
   }
   .contacts-nav__link {
-    display: inline-block;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
     color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 500;
@@ -951,10 +936,14 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts-nav__list {
     display: inline-flex;
-    justify-content: flex-end;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
   }
   .contacts-nav__list-item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1419,7 +1408,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .portfolio-projects__list-item {
     flex-basis: 100%;
   }
@@ -1440,13 +1429,12 @@ body {
 .portfolio-projects__thumb {
   position: relative;
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
 .portfolio-projects__meta {
-  padding: 20px 24px;
   background-color: var(--white-color);
+  padding: 20px 24px;
 }
 
 .overlay {
@@ -1481,6 +1469,28 @@ body {
   width: 100%;
   height: 100%;
   text-align: start;
-  padding: 63px 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay__description {
+    padding: 63px 24px;
+  }
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+
+.project-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 /*# sourceMappingURL=main.css.map */

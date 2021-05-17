@@ -7,8 +7,3 @@
   color: var(--secondary-text-color);
   margin-bottom: 16px;
 }
-.project-description {
-  @include font(16px, 400, 1.9, 0.03em);
-  color: var(--secondary-text-color);
-  margin-bottom: 4px;
-}
