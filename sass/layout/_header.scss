@@ -1,3 +1,6 @@
+* {
+  outline: 1px solid red;
+}
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
@@ -35,11 +38,13 @@
 }
 
 @media screen and (max-width: 767px) {
-  .site-nav {
+  .header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
 
+  .site-nav {
     &__list {
       display: none;
     }
@@ -59,7 +64,7 @@
 
 @media screen and (min-width: 768px) {
   .site-nav {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-right: 84px;
 
