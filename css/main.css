@@ -792,10 +792,6 @@ body {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
