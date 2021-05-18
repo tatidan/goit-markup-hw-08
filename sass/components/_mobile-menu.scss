@@ -35,7 +35,9 @@
   &__close-button:focus .mobile-menu__icon-close {
     fill: var(--accent-color);
   }
-
+  &__nav-list {
+    margin-bottom: 32px;
+  }
   &__nav-link {
     display: inline-block;
     @include font(40px, 500, 1.18, 0.02em);

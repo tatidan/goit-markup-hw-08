@@ -135,6 +135,10 @@ body {
   fill: var(--accent-color);
 }
 
+.mobile-menu__nav-list {
+  margin-bottom: 32px;
+}
+
 .mobile-menu__nav-link {
   display: inline-block;
   font-size: 40px;
