@@ -1,12 +1,15 @@
 .mobile-menu {
-  position: absolute;
-  display: block;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   margin: 0 auto;
   padding: 48px 40px 48px 40px;
+  overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -45,19 +48,6 @@
   &__nav-item:not(:last-child) {
     margin-bottom: 32px;
   }
-  &__nav-item:last-child {
-    margin-bottom: 306px;
-  }
-  &__tel {
-    @include font(34px, 500, 1.18, 0.02em);
-    color: var(--accent-color);
-    margin-bottom: 32px;
-  }
-  &__mail {
-    @include font(24px, 500, 1.17, 0.02em);
-    color: var(--secondary-text-color);
-    margin-bottom: 64px;
-  }
 
   &__social-link {
     @include font(18px, 500, 1.22, 0.02em);
@@ -76,6 +66,20 @@
     border-left: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 10px;
   }
+  &__contacts-list {
+    margin-bottom: 64px;
+  }
+}
+
+.mobile-menu__tel {
+  display: inline-block;
+  @include font(34px, 500, 1.18, 0.02em);
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+.mobile-menu__mail {
+  @include font(24px, 500, 1.17, 0.02em);
+  color: var(--secondary-text-color);
 }
 
 .mobile-menu.is-open {
